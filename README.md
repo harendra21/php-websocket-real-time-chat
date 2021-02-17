@@ -22,24 +22,10 @@ WebSockets is a bi-directional, full-duplex, persistent connection from a web br
 8. Now hit public folder of the project by your browser — “localhost/path_to_your_folder/public”
 9. Enjoy!
 
-## Register
-[http://localhost/chat/public/#!/register](http://localhost/chat/public/#!/register "Register Page")
-
-![Registration Page](chat_register.png)
-
-## Login
-[http://localhost/chat/public/#!/login](http://localhost/chat/public/#!/login "Login Page")
-
-![Login Page](chat_login.png)
-
-## Chat
-[http://localhost/chat/public/#!/](http://localhost/chat/public/#!/ "Chat Page")
-
-![Chat Page](chat_main.png)
-
 # Database table
 
-`CREATE TABLE `messages` (
+```sql
+CREATE TABLE `messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `from_id` int(11) NOT NULL,
   `to_id` int(11) NOT NULL,
@@ -67,4 +53,21 @@ CREATE TABLE `users` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;`
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+```
+
+## Register
+[http://localhost/chat/public/#!/register](http://localhost/chat/public/#!/register "Register Page")
+
+![Registration Page](chat_register.png)
+
+## Login
+[http://localhost/chat/public/#!/login](http://localhost/chat/public/#!/login "Login Page")
+
+![Login Page](chat_login.png)
+
+## Chat
+[http://localhost/chat/public/#!/](http://localhost/chat/public/#!/ "Chat Page")
+
+![Chat Page](chat_main.png)
+
