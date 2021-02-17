@@ -5,10 +5,12 @@ WebSockets is a bi-directional, full-duplex, persistent connection from a web br
 1. Clone the repository from Github using — “git clone https://github.com/harendra21/Realtime-One-To-One-Chat.git”
 2. Place the cloned folder to your local server.
 3. Now open cmd in this in the cloned directory and run — “composer install”
-4. Then change directory to bin folder by — “cd bin”
-5. Stat-server by — “php chat-server.php”
-6. Now hit public folder of the project by your browser — “localhost/path_to_your_folder/public”
-7. Enjoy!
+4. Import Database and change the configuration in `config.php` file according to your database.
+5. Change `base_url` in `public/script/app.js` according to your project location.
+6. Then change directory to bin folder by — “cd bin”
+7. Stat-server by — “php chat-server.php”
+8. Now hit public folder of the project by your browser — “localhost/path_to_your_folder/public”
+9. Enjoy!
 
 # Database table
 
